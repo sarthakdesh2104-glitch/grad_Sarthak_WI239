@@ -1,4 +1,4 @@
-package bike_racing
+package bike_racing;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
