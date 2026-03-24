@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Loan Calculator</h1>
+    <form action="">
+        <label for="name">Applicant Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="type">Type</label>
+        <select name="type" id="type" onchange="printInterest()">
+            <option value="home">Home</option>
+            <option value="car">Car</option>
+            <option value="personal">Personal</option>
+        </select>
+        <br><br>
+        <label for="interest">Interest: </label>
+        <input type="text" disabled="true" id="interest">
+        <br><br>
+        <label for="amount">Amount: </label>
+        <input type="text" id="amount" name="amount">
+        <br><br>
+        <label for="duration">Duration (yr)</label>
+        <input type="text" id="duration" name="duration">
+        <br><br>
+
+        <button type="button" onclick="calculateEMI()">Calculate EMI</button>
+        <br><br>
+        <div id="invalid" style="color: red;"></div>
+        <div id="result"></div>
+    </form>
+</body>
+</html>
